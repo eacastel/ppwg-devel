@@ -1,0 +1,308 @@
+// base/_typography.scss
+
+
+$font-size-base: 16px;
+$font-size-md: 16px;
+$font-size-lg: 17px;
+
+$line-height-base: 1.5;
+$line-height-md: 1.6;
+$line-height-lg: 1.6;
+
+
+
+p {
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $font-size-md;
+    line-height: $line-height-md;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+  }
+}
+
+
+// Font sizes 
+
+$h1-size: 2em;     // Was 2.25em
+$h2-size: 1.25em;  // Was 2em
+$h3-size: 1em;   // Was 1.75em
+$h4-size: 0.75em;  // Was 1.5em
+$h5-size: 0.5em;     // Was 1.25em
+$h6-size: 0.25em;  // Was 1em
+
+
+h1 {
+  font-size: $h1-size;
+}
+
+h2 {
+  font-size: $h2-size;
+  color:#006DB8;
+  a{
+    color:#006DB8;
+  }
+}
+
+h3 {
+  font-size: $h3-size;
+}
+
+h4 {
+  font-size: $h4-size;
+}
+
+h5 {
+  font-size: $h5-size;
+}
+
+h6 {
+  font-size: $h6-size;
+}
+
+@media (min-width: $breakpoint-md) {
+  h1 {
+    font-size: $h1-size * 1.1;
+  }
+
+  h2 {
+    font-size: $h2-size * 1.1;
+  }
+
+  h3 {
+    font-size: $h3-size * 1.1;
+  }
+
+  h4 {
+    font-size: $h4-size * 1.1;
+  }
+
+  h5 {
+    font-size: $h5-size * 1.1;
+  }
+
+  h6 {
+    font-size: $h6-size * 1.1;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  h1 {
+    font-size: $h1-size * 1.2;
+  }
+
+  h2 {
+    font-size: $h2-size * 1.2;
+  }
+
+  h3 {
+    font-size: $h3-size * 1.2;
+  }
+
+  h4 {
+    font-size: $h4-size * 1.2;
+  }
+
+  h5 {
+    font-size: $h5-size * 1.2;
+  }
+
+  h6 {
+    font-size: $h6-size * 1.2;
+  }
+}
+
+// Spacing
+
+$p-margin-bottom: 1em;
+$h-margin-bottom: 0.75em;
+
+$h-margin-top: 1em;
+
+p {
+  margin-bottom: $p-margin-bottom;
+}
+
+h1 {
+  padding-top: $h-margin-top;
+  margin-bottom: $h-margin-bottom;
+}
+
+h2 {
+  margin-bottom: $h-margin-bottom;
+}
+
+h3 {
+  margin-bottom: $h-margin-bottom;
+}
+
+h4 {
+  margin-bottom: $h-margin-bottom;
+}
+
+h5 {
+  margin-bottom: $h-margin-bottom;
+}
+
+h6 {
+  margin-bottom: $h-margin-bottom;
+}
+
+@media (min-width: $breakpoint-md) {
+  p {
+    margin-bottom: $p-margin-bottom * 1.1;
+  }
+
+  h1 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+
+  h2 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+
+  h3 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+
+  h4 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+
+  h5 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+
+  h6 {
+    margin-bottom: $h-margin-bottom * 1.1;
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  p {
+    margin-bottom: $p-margin-bottom * 1.2;
+  }
+
+  h1 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+
+  h2 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+
+  h3 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+
+  h4 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+
+  h5 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+
+  h6 {
+    margin-bottom: $h-margin-bottom * 1.2;
+  }
+}
+
+a {
+  color: #6db9fb;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+h1 {
+  color: #00548D;
+}
+
+// Byline
+
+h2.byline {
+  margin-top: -16px;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: -20px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    margin-top: -23px;
+  }
+}
+
+// Slide Description
+
+.slide__caption .slide__description {
+  font-size: 1.9rem;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 2.4rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 2.6rem;
+  }
+}
+
+.region-content {
+
+
+  li {
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+
+    @media (min-width: $breakpoint-md) {
+      font-size: $font-size-md;
+      line-height: $line-height-md;
+    }
+
+    @media (min-width: $breakpoint-lg) {
+      font-size: $font-size-lg;
+      line-height: $line-height-lg;
+    }
+  }
+
+  ul {
+    list-style-type: circle;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  li {
+    margin-left: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    line-height: 1.5em;
+  }
+}
+
+.node-31 .field--name-body {
+  ol {
+    list-style-type: decimal;
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  li {
+    margin-left: 5px;
+    padding-bottom: 50px;
+    padding-left: 5px;
+    line-height: 1.5em;
+  }
+  li::marker {
+    font-size: $h3-size * 1.1;
+  }
+}

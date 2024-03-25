@@ -1,0 +1,23 @@
+// main.scss
+
+// Importing base styles
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/reset';
+@import 'base/typography';
+
+
+
+// Importing components
+@import 'components/hero-slider';
+@import 'components/homepage-paragraphs';
+@import 'components/ip-button';
+@import 'components/navbar';
+@import 'components/webforms';
+@import 'components/join-now';
+@import 'components/footer';
+@import 'components/grid';
+@import 'components/views-feature-list';
+@import 'components/page';
+@import 'components/taxonomy';

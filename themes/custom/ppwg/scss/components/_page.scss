@@ -1,0 +1,174 @@
+.container {
+    max-width: 1140px;
+}
+
+.region.region-content {
+    padding: 0 20px;
+}
+
+
+@media (min-width: 768px) {
+
+    .region.region-content {
+        padding: 0 40px;
+    }
+}
+
+.page-node-type-treatment {
+.field--name-field-image {
+    margin-bottom:30px;
+}
+/* Treatment Summary */
+
+.field--name-field-treatment-summary {
+    background-color: #FFFFFF; /* White background for a clean look */
+    border: 1px solid #E0E0E0; /* Light grey border for subtle separation */
+    padding: 20px; /* Ample padding for content breathing space */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+    text-align: left; /* Left align text for natural reading flow */
+    margin: 20px 0 30px; /* Margin for outside spacing */
+}
+
+.field--name-field-treatment-summary p {
+    color: #333333; /* Darker text for better readability */
+    font-size: 16px; /* Comfortable font size */
+    line-height: 1.6; /* Line height for readability */
+    margin: 0; /* Remove default margin */
+}
+
+/* Bottom How Can PPWG Help */
+
+.field--name-field-how-can-ppwg-help {
+    background-color: #FFFFFF; /* White background for the card */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px 0; /* Margin for spacing around the card */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.field--name-field-how-can-ppwg-help .field--label {
+    font-size: 18px; /* Larger font for the title */
+    font-weight: bold; /* Bold font for the title */
+    margin-bottom: 10px; /* Space below the title */
+    color: #005793; /* Color for the title */
+}
+
+.field--name-field-how-can-ppwg-help .field--item {
+    font-size: 16px; /* Font size for the content */
+    line-height: 1.6; /* Line height for better readability */
+    color: #333333; /* Darker color for the text */
+}
+
+
+/* Tags */
+.field--name-field-tags {
+    display: flex; /* Align tags in a row */
+    flex-wrap: wrap; /* Allow tags to wrap to the next line */
+    gap: 10px; /* Space between tags */
+    padding: 10px 0; /* Vertical padding */
+}
+
+.field--name-field-tags .field--item {
+    background-color: #006DB8; /* Light grey background for the chip */
+    border-radius: 10px; /* Rounded corners for the chip */
+}
+
+.field--name-field-tags .field--item a {
+    display: block;
+    padding: 6px 12px 8px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    line-height: 1em;
+}
+
+.field--name-field-tags .field--item a:hover {
+    background-color: #BDBDBD; /* Darker shade on hover */
+    border-radius: 10px;
+}
+
+/* Sidebar Menu Treatments */
+/* Styling for the sidebar container */
+.region-sidebar-second {
+    background-color: #FFFFFF !important; /* White background for the card */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+    margin: 50px 0 20px; /* Margin at the bottom */
+}
+
+/* Styling for the block title */
+.region-sidebar-second .block-title {
+    font-size: 19px; /* Larger font size for the title */
+    color: #333333; /* Dark color for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Styling for the list items */
+.region-sidebar-second .item-list ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+.region-sidebar-second .item-list ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Styling for the links */
+.region-sidebar-second .item-list ul li a {
+    color: #006DB8; /* Color for the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Font size for the links */
+    transition: color 0.3s ease; /* Transition for hover effect */
+    font-weight: normal;
+}
+
+.region-sidebar-second .item-list ul li a:hover {
+    color: #005793; /* Darker color on hover */
+}
+
+
+}
+
+
+.node-51 {
+
+.region-sidebar-second {
+    background-color: #FFFFFF !important; /* White background for the card */
+    padding: 20px; /* Padding inside the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+    margin: 50px 0 20px; /* Margin at the bottom */
+}
+/* Styling for the block title */
+.region-sidebar-second .block-title {
+    font-size: 19px; /* Larger font size for the title */
+    color: #333333; /* Dark color for the title */
+    margin-bottom: 15px; /* Space below the title */
+}
+
+/* Styling for the list items */
+.region-sidebar-second .field--name-body ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+.region-sidebar-second .field--name-body ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+/* Styling for the links */
+.region-sidebar-second .field--name-body ul li a {
+    color: #006DB8; /* Color for the links */
+    text-decoration: none; /* Remove underline */
+    font-size: 15px; /* Font size for the links */
+    transition: color 0.3s ease; /* Transition for hover effect */
+    font-weight: normal;
+}
+
+.region-sidebar-second .field--name-body ul li a:hover {
+    color: #005793; /* Darker color on hover */
+}
+}

@@ -1,0 +1,266 @@
+// _variables.scss
+
+// Add these new variables
+$navbar-background: #080808;
+$navbar-border-color: #080808;
+$navbar-link-color: #fff;
+$navbar-link-hover-color: #000;
+$navbar-link-hover-bg: #d1d1d1;
+$navbar-active-border: 3px solid white;
+$navbar-last-link-bg: #007bff;
+$navbar-last-link-hover-bg: #0056b3;
+$navbar-mobile-bg: #000;
+$navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
+
+// components/_navbar.scss
+
+.navbar-header {
+  padding-top: 10px;
+
+  @media (max-width: 767px) {
+    background-color: $navbar-mobile-bg;
+    position: relative;
+  }
+}
+
+  /* Accomodates menu to not cover content */
+  .region.region-header {
+   // padding-bottom: 13px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+}
+
+.navbar .logo {
+  padding-left: 10px;
+}
+
+.navbar-nav {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.navbar-default {
+  background-color: $navbar-background;
+  border-color: $navbar-border-color;
+
+  .navbar-nav {
+    > .active > a {
+      display: inline-block;
+      background-color: $navbar-background;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: $navbar-active-border;
+    }
+  }
+}
+
+.navbar-fixed-top {
+  border-width: 0;
+  background: $navbar-background;
+}
+
+nav#block-endossmp-theme-main-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+
+  ul.menu {
+    margin-bottom: 0;
+  }
+
+  li {
+    a {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $navbar-link-color;
+
+      &:hover {
+        display: inline-block;
+        background-color: $navbar-link-hover-bg;
+        color: $navbar-link-hover-color;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      &:focus {
+        //background-color: transparent;
+      }
+    }
+
+    &.last {
+      a {
+        font-weight: bold;
+        display: inline-block;
+        background-color: $navbar-last-link-bg;
+        color: $navbar-link-color;
+        border-radius: 5px;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $navbar-last-link-hover-bg;
+        }
+
+      }
+    }
+  }
+}
+
+
+nav#block-endossmp-theme-main-menu .dropdown-menu  {
+  background: black;
+  border: black;
+
+  li.last a {
+
+      display: inline-block;
+      background-color: black;
+      color: $navbar-link-color;
+      border-radius: 0;
+      text-decoration: none;
+  }
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: black;
+  outline: 0;
+}
+
+
+
+.navbar-btn {
+  margin: 0;
+  padding-left: 5px;
+}
+
+.navbar-nav > li > a {
+  padding: 5px 10px;
+  margin: 10px 5px;
+}
+
+@media (min-width: 768px) {
+  .navbar-collapse {
+    display: block !important;
+  }
+
+  .navbar-toggle {
+    display: none !important;
+  }
+
+  .navbar-header {
+    float: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-toggle {
+    margin-top: 0;
+    margin-bottom: 6px;
+    position: relative;
+    z-index: 1200;
+
+    button {
+      margin-right: 30px;
+    }
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: none;
+    z-index: 1000;
+    overflow: hidden;
+    background-color: $navbar-mobile-overlay;
+    border: none;
+
+    &.in {
+      display: block;
+    }
+  }
+
+  .navbar-nav > li {
+    margin-bottom: 10px;
+  }
+}
+
+body.navbar-is-fixed-top {
+  margin-top: 80px;
+}
+
+body.toolbar-fixed.toolbar-horizontal.toolbar-tray-open .navbar-fixed-top {
+  top: 80px;
+  height: 80px;
+}
+
+/* Join Now button on mobile */
+.navbar-btn.join-now {
+  display: none;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    //position: relative;
+  }
+
+  .navbar-btn {
+    padding-left: 45px;
+  }
+
+  .navbar-btn.join-now {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    margin: 0px;
+    width: 49px;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 2px 4px;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  .navbar-btn.join-now {
+    a {
+      color: #fff;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  .navbar-btn.join-now:hover {
+    background-color: #0056b3;
+  }
+
+  .navbar-toggle {
+    float: left;
+    display:block;
+    margin-right: 70px;
+  }
+}
+
+

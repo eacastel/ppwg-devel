@@ -1,0 +1,69 @@
+/* Basic styles for the view container */
+.view-pain-management-treatments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusts the boxes to be evenly spaced */
+  margin: 20px 0;
+}
+
+/* Basic styles for each treatment box */
+.view-pain-management-treatments .views-row {
+  background-color: #FFFFFF; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Material shadow */
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px;
+  padding: 15px; /* Padding inside each box */
+  flex-basis: 100%; /* Full width on mobile */
+}
+
+/* Styling for the treatment title */
+.views-field-title a {
+  //font-size: 18px;
+  font-weight: 300;
+  //color: #006DB8; /* Adjust color as needed */
+  text-decoration: none;
+  display: block; /* Ensures the link takes up the entire line */
+}
+
+/* Styling for the treatment summary */
+.views-field-field-treatment-summary p {
+  //font-size: 14px;
+  //color: #666666;
+  margin-top: 10px;
+}
+
+
+/* Adjustments for medium screens (e.g., tablets) */
+@media (min-width: 768px) {
+  .view-pain-management-treatments .views-row {
+      flex-basis: calc(50% - 20px); /* 2 columns */
+  }
+}
+
+/* Adjustments for large screens */
+@media (min-width: 992px) {
+  .view-pain-management-treatments .views-row {
+      flex-basis: calc(33.333% - 20px); /* 3 columns */
+  }
+}
+/* Styling for 'Read More' link */
+.views-field-view-node a {
+  display: inline-block;
+  background-color: #006DB8; /* Material Design Blue */
+  color: #FFFFFF; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  //font-weight: bold; /* Bold font */
+  margin-top: 10px; /* Space above the link */
+}
+
+/* Hover effect for 'Read More' link */
+.views-field-view-node a:hover,
+.views-field-view-node a:focus {
+  background-color: #005095; /* Slightly darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+  text-decoration: none; /* Ensure underline does not reappear */
+}

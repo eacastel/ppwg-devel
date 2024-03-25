@@ -1,0 +1,1668 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap");
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Define your SCSS variables here */
+/* Define your reusable mixins here */
+/* More mixins as needed... */
+html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+body {
+  line-height: 1;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: initial;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  background-color: #F8F8F8;
+  color: #424242;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+mark {
+  background-color: #fdffb6;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
+  color: #006DB8;
+}
+h2 a {
+  color: #006DB8;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+h4 {
+  font-size: 0.75em;
+}
+
+h5 {
+  font-size: 0.5em;
+}
+
+h6 {
+  font-size: 0.25em;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.2em;
+  }
+  h2 {
+    font-size: 1.375em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  h4 {
+    font-size: 0.825em;
+  }
+  h5 {
+    font-size: 0.55em;
+  }
+  h6 {
+    font-size: 0.275em;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    font-size: 2.4em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 0.9em;
+  }
+  h5 {
+    font-size: 0.6em;
+  }
+  h6 {
+    font-size: 0.3em;
+  }
+}
+p {
+  margin-bottom: 1em;
+}
+
+h1 {
+  padding-top: 1em;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  margin-bottom: 0.75em;
+}
+
+h4 {
+  margin-bottom: 0.75em;
+}
+
+h5 {
+  margin-bottom: 0.75em;
+}
+
+h6 {
+  margin-bottom: 0.75em;
+}
+
+@media (min-width: 768px) {
+  p {
+    margin-bottom: 1.1em;
+  }
+  h1 {
+    margin-bottom: 0.825em;
+  }
+  h2 {
+    margin-bottom: 0.825em;
+  }
+  h3 {
+    margin-bottom: 0.825em;
+  }
+  h4 {
+    margin-bottom: 0.825em;
+  }
+  h5 {
+    margin-bottom: 0.825em;
+  }
+  h6 {
+    margin-bottom: 0.825em;
+  }
+}
+@media (min-width: 992px) {
+  p {
+    margin-bottom: 1.2em;
+  }
+  h1 {
+    margin-bottom: 0.9em;
+  }
+  h2 {
+    margin-bottom: 0.9em;
+  }
+  h3 {
+    margin-bottom: 0.9em;
+  }
+  h4 {
+    margin-bottom: 0.9em;
+  }
+  h5 {
+    margin-bottom: 0.9em;
+  }
+  h6 {
+    margin-bottom: 0.9em;
+  }
+}
+a {
+  color: #6db9fb;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+h1 {
+  color: #00548D;
+}
+
+h2.byline {
+  margin-top: -16px;
+}
+@media (min-width: 768px) {
+  h2.byline {
+    margin-top: -20px;
+  }
+}
+@media (min-width: 992px) {
+  h2.byline {
+    margin-top: -23px;
+  }
+}
+
+.slide__caption .slide__description {
+  font-size: 1.9rem;
+}
+@media (min-width: 768px) {
+  .slide__caption .slide__description {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 992px) {
+  .slide__caption .slide__description {
+    font-size: 2.6rem;
+  }
+}
+
+.region-content li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+@media (min-width: 768px) {
+  .region-content li {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 992px) {
+  .region-content li {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
+.region-content ul {
+  list-style-type: circle;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.region-content ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.region-content li {
+  margin-left: 5px;
+  padding-bottom: 20px;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+
+.node-31 .field--name-body ol {
+  list-style-type: decimal;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.node-31 .field--name-body li {
+  margin-left: 5px;
+  padding-bottom: 50px;
+  padding-left: 5px;
+  line-height: 1.5em;
+}
+.node-31 .field--name-body li::marker {
+  font-size: 1.1em;
+}
+
+/* Base Styles (Mobile First) */
+section#block-ppwg-views-block-ppwg-slideshow-block-2 {
+  margin-top: 15px;
+}
+
+.view-ppwg-slideshow .slick__slide {
+  position: relative;
+}
+
+/* Positioning the headline and subhead over the image for mobile */
+.view-ppwg-slideshow .blazy__caption {
+  position: absolute;
+  top: 21%; /* Adjust as needed for mobile */
+  left: 36%;
+  transform: translateX(-50%);
+  text-align: left;
+  width: 58%; /* Adjust width as needed */
+  color: white;
+}
+
+/* Styling for the headline - Mobile */
+.view-ppwg-slideshow .slide__title {
+  color: #006DB8;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 28px; /* Smaller font for mobile */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  display: none;
+}
+.view-ppwg-slideshow .slide__title a {
+  text-decoration: none;
+  color: #006DB8;
+}
+
+/* Styling for the subhead - Mobile */
+.view-ppwg-slideshow .slide__description {
+  color: #006DB8;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px; /* Smaller font for mobile */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left; /* Justify subhead to the left */
+  display: none;
+}
+
+.slide__link {
+  display: none;
+}
+
+nav.slick__arrow {
+  display: none;
+}
+
+.media--ratio .media__element, .media--ratio svg, .media--fx .b-blur {
+  height: 350px;
+  object-fit: cover;
+  object-position: right;
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) {
+  .media--ratio .media__element, .media--ratio svg, .media--fx .b-blur {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .view-ppwg-slideshow .blazy__caption {
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 59%;
+  }
+  .view-ppwg-slideshow .slide__title {
+    display: block;
+    font-size: 38px; /* Adjusted font size for tablets */
+    line-height: 42px;
+    color: #4D4E4F;
+    margin-bottom: 20px;
+  }
+  .view-ppwg-slideshow .slide__title a {
+    text-decoration: none;
+    color: #4D4E4F;
+  }
+  .view-ppwg-slideshow .slide__description {
+    font-size: 20px; /* Adjusted font size for tablets */
+    line-height: 26px;
+    display: block;
+  }
+  .slide__link {
+    display: flex; /* Aligns links side by side */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+    margin: 0; /* Resets default margin */
+  }
+  .slide__link a {
+    text-decoration: none; /* Removes underline from links */
+    margin-right: 15px; /* Adds space between the links */
+    position: relative; /* Needed for pseudo-element positioning */
+    padding-left: 20px; /* Adds space for bullet point */
+    margin-top: 25px;
+    width: 150px;
+    color: #006DB8;
+  }
+  .slide__link a::before {
+    content: "•"; /* Creates the bullet point */
+    position: absolute; /* Positions the pseudo-element */
+    left: 0; /* Aligns the bullet point before the text */
+    top: 20%; /* Centers the bullet point vertically */
+    transform: translateY(-50%); /* Fine-tunes vertical centering */
+    color: #006DB8; /* Sets bullet point color */
+    font-size: 20px; /* Adjusts size of the bullet point */
+  }
+}
+/* Large Screens */
+@media (min-width: 992px) {
+  .view-ppwg-slideshow .blazy__caption {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 54%;
+  }
+  .view-ppwg-slideshow .slide__title {
+    font-size: 45px; /* Original font size for large screens */
+    line-height: 49px;
+    margin-bottom: 24px;
+  }
+  .view-ppwg-slideshow .slide__description {
+    font-size: 26px; /* Original font size for large screens */
+    line-height: 34px;
+  }
+  .slide__link {
+    display: flex; /* Aligns links side by side */
+    flex-wrap: wrap; /* Allows links to wrap to next line on smaller screens */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+    margin: 0; /* Resets default margin */
+  }
+  .slide__link a {
+    text-decoration: none; /* Removes underline from links */
+    margin-right: 15px; /* Adds space between the links */
+    position: relative; /* Needed for pseudo-element positioning */
+    padding-left: 20px; /* Adds space for bullet point */
+    margin-top: 25px;
+    width: 150px;
+    color: #006DB8;
+  }
+  .slide__link a::before {
+    content: "•"; /* Creates the bullet point */
+    position: absolute; /* Positions the pseudo-element */
+    left: 0; /* Aligns the bullet point before the text */
+    transform: translateY(-50%); /* Fine-tunes vertical centering */
+    color: #006DB8; /* Sets bullet point color */
+    font-size: 20px; /* Adjusts size of the bullet point */
+  }
+}
+.slick__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*-- IP Button Text --*/
+.block-title {
+  margin: 0.5em 0;
+  font-size: 2rem;
+}
+
+.ip-block {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.ip-box-container {
+  padding: 10px;
+  border: 3px solid #545454;
+  background-color: #181818;
+  border-radius: 15px;
+}
+.ip-box-container h2 {
+  text-align: center;
+}
+
+.ip-title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #080808;
+}
+.ip-title h3 {
+  margin: -0.5em 0 0.5em 0;
+}
+.ip-title p {
+  margin-block-start: -1em;
+}
+
+/* Load Variables */
+/* Mobile First Styles */
+.navbar.container, .navbar.container-fluid {
+  margin-top: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background-color: #FCFCFC;
+}
+
+.navbar .logo {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.navbar.container, .navbar.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-header {
+  height: 60px;
+  background-color: #005793;
+  float: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #66baf1;
+  margin: 35px 50px 0 0;
+  border: 3px solid #66baf1;
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #005793;
+  border-color: #ccc;
+  border: 3px solid #ccc;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #66baf1;
+  height: 3px;
+}
+
+/* Top User Menu Items */
+.navbar-right.menu--account li {
+  float: right;
+}
+.navbar-right.menu--account li a {
+  display: inline-block;
+  border-radius: 11px;
+  border: 2px solid #FFF;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 13px;
+  line-height: normal;
+  text-transform: capitalize;
+  padding: 2px 16px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: 14px center;
+  margin: 11px 10px 0 0;
+  transition: color 0.3s ease;
+  width: 116px;
+}
+.navbar-right.menu--account li a:hover {
+  color: #66B2FF;
+}
+
+/* Specific background image for Patient Login */
+.navbar-right.menu--account li a.patient-login {
+  background-image: url("/sites/default/files/icon _lock.png");
+  background-size: 10px;
+  padding-left: 33px;
+}
+
+/* Specific background image for Telehealth */
+.navbar-right.menu--account li a.telehealth-visit-menu {
+  background-image: url("/sites/default/files/icon_speech_typing.png");
+  background-size: 15px;
+  padding-left: 36px;
+}
+
+/* Specific for Appointment */
+.navbar-right.menu--account li a.make-an-appointment {
+  padding: 3px 4px 4px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: #FFBEBF;
+  color: #534D4D;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 120px;
+  margin-top: 10px;
+}
+.navbar-right.menu--account li a.make-an-appointment:hover {
+  background-color: #66baf1;
+  color: #005793;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #F8F8F8;
+    width: 100%;
+  }
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav > li {
+    text-align: center;
+  }
+  .navbar-nav > li > a {
+    color: #00548D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 15px;
+    display: block;
+  }
+  .navbar-nav > li > a:hover {
+    background-color: #00548D;
+    color: #F8F8F8;
+  }
+  /* Style for the dropdown menus */
+  .dropdown-menu {
+    background-color: #00548D;
+    color: #F8F8F8;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  }
+  .dropdown-menu li a {
+    text-align: center;
+    color: #00548D;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    padding: 15px 15px;
+    display: block;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #F8F8F8;
+    background-color: #00548D;
+  }
+}
+/* Medium Size Screens */
+@media (min-width: 768px) {
+  .navbar-right.menu--account li {
+    float: right;
+  }
+  .navbar-right.menu--account li a {
+    border-radius: 100px;
+    margin: 17px 26px 0 0;
+  }
+  .navbar-right.menu--account li a.patient-login {
+    width: 137px;
+  }
+  .navbar-right.menu--account li a.telehealth-visit-menu {
+    width: 152px;
+  }
+  .navbar.container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .navbar .logo {
+    padding: 10px;
+    margin-top: 70px;
+  }
+  .menu--main {
+    margin-top: 20px !important;
+    float: right;
+  }
+  .menu--main li a {
+    color: #00548D !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+  }
+  .menu--main li .dropdown-menu li a {
+    background-color: #F8F8F8;
+    border: none;
+    color: #00548D !important;
+    padding: 10px 20px;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
+  }
+  .menu--main li .dropdown-menu li a:hover {
+    color: #F8F8F8 !important;
+  }
+}
+/* Large Size Screens */
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+  .navbar.container {
+    max-width: 1140px;
+    width: 100%;
+  }
+  .menu--main li a {
+    color: #00548D !important;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 15px;
+  }
+  .menu--main li a.last {
+    padding-right: 0;
+  }
+  .menu--main li.last > a {
+    padding-right: 15px;
+  }
+  .navbar-nav .dropdown .dropdown-menu a:hover {
+    background-color: #005793;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+  .expanded ul.dropdown-menu {
+    left: 0;
+    right: auto;
+    min-width: 225px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.path-webform .navbar .logo {
+  margin-top: 2px;
+}
+
+.webform-submission-form .webform-button---select {
+  margin: 0;
+  width: 100px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #777777;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid #999999;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 1.4em;
+}
+.webform-submission-form .webform-button---select a {
+  color: #ccc;
+}
+.webform-submission-form .webform-button---select a:hover {
+  text-decoration: none;
+}
+.webform-submission-form .webform-button---select:hover {
+  background-color: #0056b3;
+}
+.webform-submission-form .webform-button--submit {
+  margin: 0;
+  width: 133px;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #006DB8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #ccc;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 1.4em;
+}
+.webform-submission-form .webform-button--submit a {
+  color: #ccc;
+}
+.webform-submission-form .webform-button--submit a:hover {
+  text-decoration: none;
+}
+.webform-submission-form .webform-button--submit:hover {
+  background-color: #0056b3;
+}
+.webform-submission-form .webform-button--submit2 {
+  margin: 40px;
+  max-width: 80%;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #006DB8;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 4px 12px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  color: #fff;
+  line-height: 1.5em;
+}
+.webform-submission-form .webform-button--submit2 a {
+  color: #ccc;
+}
+.webform-submission-form .webform-button--submit2 a:hover {
+  text-decoration: none;
+}
+.webform-submission-form .webform-button--submit2:hover {
+  background-color: #0056b3;
+}
+
+.node-34 {
+  /* Medium and larger screens */
+}
+.node-34 .page-header {
+  text-align: center;
+}
+.node-34 .request-an-appointment-box {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+.node-34 .client-section {
+  border: 2px solid #006DB8; /* Blue border */
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.node-34 .client-section h3 {
+  text-align: center;
+  color: #006DB8;
+  margin-bottom: 15px;
+}
+.node-34 .client-section .webform-button--submit2 {
+  background-color: #006DB8;
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+}
+.node-34 .client-section .webform-button--submit2.upload-documents {
+  background-color: #4CAF50; /* Different color for upload button */
+}
+.node-34 .client-section ol {
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .node-34 .request-an-appointment-box {
+    padding: 20px;
+  }
+}
+
+/* General Webform Styles */
+.webform-submission-patient-uploads-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.webform-submission-patient-uploads-form label.control-label {
+  font-weight: bold;
+  color: #006DB8;
+  margin-bottom: 5px;
+}
+.webform-submission-patient-uploads-form .form-control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+.webform-submission-patient-uploads-form .form-actions {
+  text-align: center;
+}
+.webform-submission-patient-uploads-form .form-submit {
+  background-color: #006DB8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.webform-submission-patient-uploads-form .form-submit:hover {
+  background-color: #005095;
+}
+.webform-submission-patient-uploads-form .description.help-block {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  .webform-submission-form {
+    padding: 30px;
+  }
+}
+/* File Upload Button Styles */
+.webform-file-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 5px;
+}
+.webform-file-button:hover {
+  background-color: #3E8E41;
+}
+
+/* Targeting the container of the file upload fields */
+.form-type-managed-file {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+.form-type-managed-file label.control-label {
+  font-weight: bold;
+  color: #006DB8;
+  margin-bottom: 10px;
+}
+.form-type-managed-file .btn-primary {
+  background-color: #006DB8;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+.form-type-managed-file .btn-primary:hover {
+  background-color: #005095;
+}
+
+@media (max-width: 768px) {
+  .form-type-managed-file {
+    padding: 10px;
+  }
+}
+section#block-ppwg-ppwgfeatureservices {
+  position: relative;
+  z-index: 10;
+  margin-top: -40px;
+  background: url("/sites/default/files/blue-wave.png") no-repeat center center; /* Add your background */
+  background-size: cover;
+}
+section#block-ppwg-ppwgfeatureservices p {
+  margin-bottom: 12px;
+}
+section#block-ppwg-ppwgfeatureservices .feature-boxes-wrapper {
+  padding: 40px; /* Space around the boxes */
+}
+section#block-ppwg-ppwgfeatureservices .feature-box {
+  border-radius: 30px;
+  border: 2px solid #e7e7e7;
+  background: #E4F4FF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 15px 10px 0 10px;
+  margin-bottom: 20px; /* Vertical spacing between boxes */
+  text-align: center;
+}
+section#block-ppwg-ppwgfeatureservices .feature-title {
+  color: #00548D;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+}
+section#block-ppwg-ppwgfeatureservices .feature-text {
+  color: #4D4E4F;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 145.5%;
+}
+section#block-ppwg-ppwgfeatureservices .feature-btn {
+  display: inline-block;
+  color: #FFF;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 100px;
+  border: 2px solid #FFF;
+  background: #00548D;
+  padding: 0px 11px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  section#block-ppwg-ppwgfeatureservices {
+    margin-top: -140px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-boxes-wrapper {
+    padding: 80px 20px 0;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-box {
+    margin-right: 10px; /* Space between boxes */
+    margin-left: 10px; /* Space between boxes */
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-boxes-wrapper .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-title {
+    font-size: 20px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-text {
+    font-size: 15px;
+    line-height: 130%;
+  }
+}
+@media (min-width: 992px) {
+  section#block-ppwg-ppwgfeatureservices {
+    margin-top: -170px;
+    background-size: 1141px 280px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-boxes-wrapper {
+    padding: 0px 20px 5px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-box {
+    margin-right: 15px; /* Space between boxes */
+    margin-left: 15px; /* Space between boxes */
+    margin-top: 80px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  section#block-ppwg-ppwgfeatureservices .feature-text {
+    font-size: 15px;
+    line-height: 140%;
+  }
+}
+.footer .region-footer nav {
+  display: flex;
+  justify-content: center;
+}
+.footer .region-footer nav a {
+  font-weight: normal;
+}
+.footer .region-footer nav .nav > li > a:hover, .footer .region-footer nav .nav > li > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.footer .region-footer ul.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .region-footer ul.menu li {
+  flex: 0 0 auto;
+}
+
+@media (max-width: 991px) {
+  .footer .region-footer ul.menu {
+    flex: 1 0 100%;
+    max-width: 100%;
+    justify-content: left;
+  }
+}
+.discord-endossmp-link {
+  position: relative;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.discord-endossmp-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  pointer-events: none;
+}
+
+.discord-endossmp-link img.discord-img {
+  padding: 30px;
+  max-width: 180px;
+}
+
+/* Footer Copyright */
+#block-endossmp-theme-footercopyright .field--name-body {
+  font-size: 80%;
+  text-align: center;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #FCFCFC;
+}
+
+.container.ppwg-grid-one {
+  padding: 60px 14px;
+}
+.container.ppwg-grid-one .ppwg-grid-one-card {
+  padding: 17px;
+  text-align: center;
+}
+.container.ppwg-grid-one .ppwg-grid-one-title {
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 12px;
+  text-transform: uppercase;
+}
+.container.ppwg-grid-one .ppwg-grid-one-title a {
+  color: #00548D;
+}
+.container.ppwg-grid-one .ppwg-grid-one-title a:hover {
+  color: #66B2FF;
+}
+.container.ppwg-grid-one .ppwg-grid-one-title a {
+  text-decoration: none;
+}
+.container.ppwg-grid-one .ppwg-grid-one-item {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.container.ppwg-grid-one .ppwg-grid-one-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .container.ppwg-grid-one .ppwg-grid-one-item img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .container.ppwg-grid-one { /* Large screens */ }
+}
+
+#block-ppwg-ourteam .block-title, #block-ppwg-ourfacility .block-title {
+  text-align: center;
+  color: #00548D;
+  font-size: 2.2em;
+  padding-top: 40px;
+}
+
+.path-frontpage h1.page-header {
+  text-align: center;
+}
+
+/* GRID TWO FEATURED TREATMENTS */
+.container.ppwg-grid-two {
+  padding: 40px 0px;
+  background-color: #FCFCFC;
+}
+
+.ppwg-grid-two-card {
+  padding: 25px 35px;
+  text-align: center;
+}
+
+.ppwg-grid-two-title {
+  color: #006DB8;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 20px 0;
+}
+
+.ppwg-grid-two-subhead {
+  color: #4D4E4F;
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.ppwg-grid-two-item {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Easing effect for background color change */
+}
+
+.ppwg-grid-two-item:hover .ppwg-grid-two-card {
+  background-color: #e7e7e7; /* Change to desired hover background color */
+}
+
+.ppwg-grid-two-item img {
+  width: 76px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* Title and Subhead link styles */
+.ppwg-grid-two-title a, .ppwg-grid-two-subhead a {
+  color: inherit;
+  text-decoration: none;
+}
+.ppwg-grid-two-title a:hover, .ppwg-grid-two-subhead a:hover {
+  color: #00548D;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  /* Adjustments for medium screens */
+}
+@media (min-width: 992px) { /* Large screens */
+  /* Adjustments for large screens */
+}
+.ppwg-grid-two-item-div {
+  display: block;
+}
+
+.ppwg-grid-two-item-div:hover {
+  background-color: #e7e7e7; /* Gray background on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.ppwg-grid-two-item-div:hover {
+  background-color: #e7e7e7; /* Gray background on hover */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+/* OUR FACILITY */
+.ppwg-grid-three-card {
+  padding: 15px;
+}
+
+/* TESTIMONIALS */
+.ppwg-testimonials {
+  background-color: #006DB8;
+  text-align: center;
+  padding: 30px;
+}
+.ppwg-testimonials .ppwg-review {
+  color: #FFF;
+  text-align: center;
+  font-family: Plus Jakarta Sans, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 157.5%;
+  padding: 40px 50px;
+}
+.ppwg-testimonials .ppwg-review img {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .ppwg-testimonials {
+    padding: 90px;
+  }
+  .ppwg-testimonials .ppwg-review {
+    font-size: 30px;
+    line-height: 157.5%;
+    padding: 40px 50px;
+  }
+}
+.footer {
+  background-color: #006DB8;
+  text-align: center;
+  padding: 30px;
+  font-family: Plus Jakarta Sans, sans-serif;
+}
+.footer .ppwg-footer-address, .footer .ppwg-footer-hours, .footer .ppwg-footer-phone {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 7px;
+  color: #F8F8F8;
+}
+.footer .ppwg-footer-copyright {
+  font-size: 14px;
+  padding: 20px;
+  color: #F8F8F8;
+  font-weight: normal;
+}
+.footer .ppwg-footer-copyright p {
+  margin-bottom: 0;
+}
+.footer .ppwg-footer-links {
+  font-size: 14px;
+}
+.footer .ppwg-footer-links a {
+  color: #F8F8F8;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* Basic styles for the view container */
+.view-pain-management-treatments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjusts the boxes to be evenly spaced */
+  margin: 20px 0;
+}
+
+/* Basic styles for each treatment box */
+.view-pain-management-treatments .views-row {
+  background-color: #FFFFFF; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Material shadow */
+  border-radius: 8px; /* Rounded corners */
+  margin: 10px;
+  padding: 15px; /* Padding inside each box */
+  flex-basis: 100%; /* Full width on mobile */
+}
+
+/* Styling for the treatment title */
+.views-field-title a {
+  font-weight: 300;
+  text-decoration: none;
+  display: block; /* Ensures the link takes up the entire line */
+}
+
+/* Styling for the treatment summary */
+.views-field-field-treatment-summary p {
+  margin-top: 10px;
+}
+
+/* Adjustments for medium screens (e.g., tablets) */
+@media (min-width: 768px) {
+  .view-pain-management-treatments .views-row {
+    flex-basis: calc(50% - 20px); /* 2 columns */
+  }
+}
+/* Adjustments for large screens */
+@media (min-width: 992px) {
+  .view-pain-management-treatments .views-row {
+    flex-basis: calc(33.333% - 20px); /* 3 columns */
+  }
+}
+/* Styling for 'Read More' link */
+.views-field-view-node a {
+  display: inline-block;
+  background-color: #006DB8; /* Material Design Blue */
+  color: #FFFFFF; /* White text color */
+  text-decoration: none; /* Remove underline */
+  padding: 8px 16px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  margin-top: 10px; /* Space above the link */
+}
+
+/* Hover effect for 'Read More' link */
+.views-field-view-node a:hover,
+.views-field-view-node a:focus {
+  background-color: #005095; /* Slightly darker blue on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Larger shadow on hover */
+  text-decoration: none; /* Ensure underline does not reappear */
+}
+
+.container {
+  max-width: 1140px;
+}
+
+.region.region-content {
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .region.region-content {
+    padding: 0 40px;
+  }
+}
+.page-node-type-treatment {
+  /* Treatment Summary */
+  /* Bottom How Can PPWG Help */
+  /* Tags */
+  /* Sidebar Menu Treatments */
+  /* Styling for the sidebar container */
+  /* Styling for the block title */
+  /* Styling for the list items */
+  /* Styling for the links */
+}
+.page-node-type-treatment .field--name-field-image {
+  margin-bottom: 30px;
+}
+.page-node-type-treatment .field--name-field-treatment-summary {
+  background-color: #FFFFFF; /* White background for a clean look */
+  border: 1px solid #E0E0E0; /* Light grey border for subtle separation */
+  padding: 20px; /* Ample padding for content breathing space */
+  border-radius: 8px; /* Slightly rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+  text-align: left; /* Left align text for natural reading flow */
+  margin: 20px 0 30px; /* Margin for outside spacing */
+}
+.page-node-type-treatment .field--name-field-treatment-summary p {
+  color: #333333; /* Darker text for better readability */
+  font-size: 16px; /* Comfortable font size */
+  line-height: 1.6; /* Line height for readability */
+  margin: 0; /* Remove default margin */
+}
+.page-node-type-treatment .field--name-field-how-can-ppwg-help {
+  background-color: #FFFFFF; /* White background for the card */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  padding: 20px; /* Padding inside the card */
+  margin: 20px 0; /* Margin for spacing around the card */
+  border-radius: 8px; /* Rounded corners */
+}
+.page-node-type-treatment .field--name-field-how-can-ppwg-help .field--label {
+  font-size: 18px; /* Larger font for the title */
+  font-weight: bold; /* Bold font for the title */
+  margin-bottom: 10px; /* Space below the title */
+  color: #005793; /* Color for the title */
+}
+.page-node-type-treatment .field--name-field-how-can-ppwg-help .field--item {
+  font-size: 16px; /* Font size for the content */
+  line-height: 1.6; /* Line height for better readability */
+  color: #333333; /* Darker color for the text */
+}
+.page-node-type-treatment .field--name-field-tags {
+  display: flex; /* Align tags in a row */
+  flex-wrap: wrap; /* Allow tags to wrap to the next line */
+  gap: 10px; /* Space between tags */
+  padding: 10px 0; /* Vertical padding */
+}
+.page-node-type-treatment .field--name-field-tags .field--item {
+  background-color: #006DB8; /* Light grey background for the chip */
+  border-radius: 10px; /* Rounded corners for the chip */
+}
+.page-node-type-treatment .field--name-field-tags .field--item a {
+  display: block;
+  padding: 6px 12px 8px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  line-height: 1em;
+}
+.page-node-type-treatment .field--name-field-tags .field--item a:hover {
+  background-color: #BDBDBD; /* Darker shade on hover */
+  border-radius: 10px;
+}
+.page-node-type-treatment .region-sidebar-second {
+  background-color: #FFFFFF !important; /* White background for the card */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+  margin: 50px 0 20px; /* Margin at the bottom */
+}
+.page-node-type-treatment .region-sidebar-second .block-title {
+  font-size: 19px; /* Larger font size for the title */
+  color: #333333; /* Dark color for the title */
+  margin-bottom: 15px; /* Space below the title */
+}
+.page-node-type-treatment .region-sidebar-second .item-list ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+.page-node-type-treatment .region-sidebar-second .item-list ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+.page-node-type-treatment .region-sidebar-second .item-list ul li a {
+  color: #006DB8; /* Color for the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 15px; /* Font size for the links */
+  transition: color 0.3s ease; /* Transition for hover effect */
+  font-weight: normal;
+}
+.page-node-type-treatment .region-sidebar-second .item-list ul li a:hover {
+  color: #005793; /* Darker color on hover */
+}
+
+.node-51 {
+  /* Styling for the block title */
+  /* Styling for the list items */
+  /* Styling for the links */
+}
+.node-51 .region-sidebar-second {
+  background-color: #FFFFFF !important; /* White background for the card */
+  padding: 20px; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+  margin: 50px 0 20px; /* Margin at the bottom */
+}
+.node-51 .region-sidebar-second .block-title {
+  font-size: 19px; /* Larger font size for the title */
+  color: #333333; /* Dark color for the title */
+  margin-bottom: 15px; /* Space below the title */
+}
+.node-51 .region-sidebar-second .field--name-body ul {
+  list-style-type: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+.node-51 .region-sidebar-second .field--name-body ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+.node-51 .region-sidebar-second .field--name-body ul li a {
+  color: #006DB8; /* Color for the links */
+  text-decoration: none; /* Remove underline */
+  font-size: 15px; /* Font size for the links */
+  transition: color 0.3s ease; /* Transition for hover effect */
+  font-weight: normal;
+}
+.node-51 .region-sidebar-second .field--name-body ul li a:hover {
+  color: #005793; /* Darker color on hover */
+}
+
+.path-taxonomy ul.links.inline.list-inline {
+  padding-left: 0;
+  margin-left: 0;
+  list-style-type: none;
+}
+.path-taxonomy ul.links.inline.list-inline li.node-readmore {
+  display: inline-block;
+  margin-left: 0;
+}
+.path-taxonomy ul.links.inline.list-inline li.node-readmore a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #006DB8;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+.path-taxonomy ul.links.inline.list-inline li.node-readmore a:hover {
+  background-color: #004f85;
+}
+.path-taxonomy .page-header {
+  text-transform: uppercase;
+  text-align: center;
+}
+.path-taxonomy .field--type-text-with-summary h2 {
+  display: none;
+}
+.path-taxonomy .views-element-container .view-content .views-row {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.path-taxonomy .views-element-container .view-content .views-row article h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-body h2 {
+  font-size: 1.2em;
+  color: #00548D;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-body p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags .field--label {
+  display: none;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags .field--items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags .field--items .field--item {
+  display: inline;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags .field--items .field--item:not(:last-child):after {
+  content: "|";
+  margin: 0 5px;
+  color: #333;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .content .field--name-field-tags .field--items .field--item a {
+  color: #006DB8;
+  text-decoration: none;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .links {
+  margin-left: 0;
+  padding-left: 0;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .links li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.path-taxonomy .views-element-container .view-content .views-row article .links li a {
+  background-color: #006DB8;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

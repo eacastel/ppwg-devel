@@ -1,0 +1,23 @@
+<article{{ attributes.addClass(classes) }}>
+
+  {{ title_prefix }}
+  {% if label and not page %}
+    <h2{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h2>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes.addClass('content') }}>
+    {# Display the summary of the body field #}
+    {% if content.body['#object'].body.summary %}
+      {{ content.body['#object'].body.summary }}
+    {% else %}
+      {{ content.body }}
+    {% endif %}
+
+    {# Other fields #}
+    {{ content.field_tags }}
+  </div>
+
+</article>

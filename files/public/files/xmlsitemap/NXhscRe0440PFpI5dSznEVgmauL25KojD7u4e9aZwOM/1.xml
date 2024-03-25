@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>http://localhost:8070/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost:8070/pain-management</loc><lastmod>2023-11-13T01:21Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/mental-health</loc><lastmod>2023-11-11T21:13Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/node/25</loc><lastmod>2023-11-13T10:33Z</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost:8070/about-us</loc><lastmod>2023-11-13T21:34Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/privacy-policy</loc><lastmod>2023-11-13T13:05Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/terms-of-use</loc><lastmod>2023-11-13T13:06Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/our-team</loc><lastmod>2023-11-13T13:29Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/our-team/dr-kartik-ananth</loc><lastmod>2023-11-15T16:38Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/node/31</loc><lastmod>2023-11-29T12:21Z</lastmod><changefreq>monthly</changefreq></url>
+<url><loc>http://localhost:8070/pain-management/treatment/epidural-injections</loc><lastmod>2023-12-01T16:42Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/ketamine-infusions</loc><lastmod>2023-12-05T14:13Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/request-an-appointment</loc><lastmod>2023-12-13T16:54Z</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>http://localhost:8070/pain-management/treatment/chronic-pain-management</loc><lastmod>2023-12-05T10:35Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/nerve-blocks</loc><lastmod>2023-12-05T14:24Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/radiofrequency-ablation</loc><lastmod>2023-12-05T13:01Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/spinal-cord-stimulation</loc><lastmod>2023-12-05T14:18Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/botox-for-migraines</loc><lastmod>2023-12-05T14:17Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/facet-joint-injections</loc><lastmod>2023-12-05T14:16Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/pre-surgical-consultation</loc><lastmod>2023-12-05T14:14Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/pain-management/treatment/medication-management</loc><lastmod>2023-12-05T14:22Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/tms</loc><lastmod>2023-12-06T11:39Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/ketamine-infusions</loc><lastmod>2023-12-06T11:31Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/psychotropic-medication</loc><lastmod>2023-12-06T11:37Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/psychotherapy</loc><lastmod>2023-12-06T11:44Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/add-adhd-testing</loc><lastmod>2023-12-06T12:06Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/suboxone-treatment</loc><lastmod>2023-12-08T12:38Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/traumatic-brain-injury-rehabilitation</loc><lastmod>2023-12-08T12:42Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+<url><loc>http://localhost:8070/mental-health/treatment/pre-post-surgical-evaluation</loc><lastmod>2023-12-08T12:45Z</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+</urlset>

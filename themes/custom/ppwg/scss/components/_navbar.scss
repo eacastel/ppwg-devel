@@ -1,0 +1,312 @@
+/* Load Variables */
+$navbar-background: none;
+$navbar-border-color: none;
+$navbar-link-color: #fff;
+$navbar-link-hover-color: #fff;
+$navbar-link-hover-bg: #005793;
+$navbar-active-border: 3px solid white;
+$navbar-last-link-bg: #005793;
+$navbar-last-link-hover-bg: white;
+$navbar-mobile-bg: #FCFCFC;
+$navbar-mobile-overlay: rgba(0, 0, 0, 0.8);
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap');
+
+/* Mobile First Styles */
+.navbar.container, .navbar.container-fluid {
+  margin-top: 0;
+}
+
+.navbar-nav {
+  margin: 0;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  background-color: $navbar-mobile-bg;
+}
+
+.navbar .logo {
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.navbar.container, .navbar.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.navbar-header {
+  height: 60px;
+  background-color: #005793;
+  float: none;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #66baf1;
+  margin: 35px 50px 0 0;
+  border: 3px solid #66baf1;
+
+  &:hover {
+    background-color: #005793;
+    border-color: #ccc;
+    border: 3px solid #ccc;
+  }
+
+  .icon-bar {
+    background-color: #66baf1; 
+    height: 3px; 
+  }
+}
+
+/* Top User Menu Items */
+.navbar-right.menu--account li {
+  float: right;
+  a {
+
+    display: inline-block;
+    border-radius: 11px;
+    border: 2px solid #FFF;
+    color: #FFF;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 13px;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 2px 16px;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    margin: 11px 10px 0 0;
+    transition: color 0.3s ease;
+    width: 116px;
+
+    &:hover {
+      color: #66B2FF; 
+    }
+  }
+}
+
+/* Specific background image for Patient Login */
+.navbar-right.menu--account li a.patient-login {
+  background-image: url('/sites/default/files/icon _lock.png');
+  background-size: 10px;
+  padding-left: 33px;
+}
+
+/* Specific background image for Telehealth */
+.navbar-right.menu--account li a.telehealth-visit-menu {
+  background-image: url('/sites/default/files/icon_speech_typing.png');
+  background-size: 15px;
+  padding-left: 36px;
+}
+
+/* Specific for Appointment */
+.navbar-right.menu--account li a.make-an-appointment {
+  padding: 3px 4px 4px 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid white;
+  background: #FFBEBF;
+  color: #534D4D;
+  text-align: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  width: 120px;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: #66baf1;
+    color: #005793;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .navbar-collapse {
+    background-color: #F8F8F8; // Light grey background
+    width: 100%; // Full width
+  }
+
+  .navbar-nav {
+    width: 100%; // Full width for the navigation
+
+    > li {
+      text-align: center; // Center the menu items
+
+      > a {
+        color: #00548D;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none; 
+        width: 100%;
+        padding: 15px 15px;
+        display: block; 
+        &:hover {
+          background-color: #00548D;
+          color:#F8F8F8;
+        }
+      }
+    }
+  }
+
+  /* Style for the dropdown menus */
+  .dropdown-menu {
+    background-color: #00548D;
+    color: #F8F8F8;
+    border: none; // Remove any borders
+    box-shadow: none; // Remove box shadow if there is any
+    width: 100%; // Full width for dropdowns
+
+    li a {
+      text-align: center;
+      color: #00548D;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none; 
+      width: 100%;
+      padding: 15px 15px;
+      display: block; 
+    }
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #F8F8F8;
+    background-color: #00548D;
+  }
+}
+
+/* Medium Size Screens */
+@media (min-width: 768px) {
+  .navbar-right.menu--account li {
+    float: right;
+    a {
+      border-radius: 100px;
+      margin: 17px 26px 0 0;
+      &.patient-login {
+        width: 137px;
+      }
+      &.telehealth-visit-menu {
+        width: 152px;
+      }
+    }
+    }
+  .navbar.container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .navbar .logo {
+    padding: 10px;
+    margin-top: 70px;
+  }
+
+  .menu--main {
+    margin-top: 20px !important;
+    float: right;
+    li {
+      a {
+        color: #00548D !important;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none; 
+        width: 100%;
+        padding: 10px;
+      }
+      .dropdown-menu li a {
+        background-color: #F8F8F8;
+        border: none;
+        color: #00548D !important; 
+        padding: 10px 20px;
+        text-align: left;
+        justify-content: left;
+        width: 100%;
+    
+        &:hover {
+          color: #F8F8F8 !important;
+        }
+      }
+    }
+    li.last > a {
+      //padding-right:0;
+    }
+  }
+}
+
+/* Large Size Screens */
+@media (min-width: 992px) {
+  .container-fluid {
+    max-width: 1140px;
+  }
+  .navbar.container {
+    max-width: 1140px;
+    width: 100%;
+  }
+
+  .menu--main {
+    li {
+      a {
+        color: #00548D !important;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        text-decoration: none; 
+        padding: 10px 15px;
+        &.last {
+          padding-right:0;
+        }
+      }
+    }
+    li.last > a {
+      padding-right: 15px;
+    }
+  }
+
+  .navbar-nav .dropdown .dropdown-menu a:hover {
+    background-color: $navbar-link-hover-bg;
+    color: $navbar-link-hover-color;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .expanded ul.dropdown-menu {
+    left: 0;
+    right: auto;
+    min-width: 225px;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.path-webform {
+  .navbar .logo {
+    margin-top: 2px;
+  }
+}

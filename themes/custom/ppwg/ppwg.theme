@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function ppwg_preprocess_html(&$variables) {
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $variables['node_id'] = $node->id();
+  }
+}

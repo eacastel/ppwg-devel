@@ -1,0 +1,118 @@
+.path-taxonomy {
+  ul.links.inline.list-inline {
+    padding-left: 0; // Removes left padding
+    margin-left: 0; // Removes left margin
+    list-style-type: none; // Removes bullet points
+
+    li.node-readmore {
+      display: inline-block; // Keeps the list items inline
+      margin-left: 0; // Removes left margin for list items
+
+      a {
+        text-decoration: none; // Removes underline from links
+        color: #fff; // Text color
+        background-color: #006DB8; // Button background color
+        padding: 8px 15px; // Padding inside the button
+        border-radius: 4px; // Rounded corners
+        font-weight: bold; // Bold text
+        display: inline-block; // Ensures proper button display
+
+        &:hover {
+          background-color: darken(#006DB8, 10%); // Darkens the button on hover
+        }
+      }
+    }
+  }
+
+  .page-header {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+.field--type-text-with-summary h2 {
+  display: none;
+}
+
+  .views-element-container {
+    .view-content {
+      .views-row {
+        margin-bottom: 20px; // Spacing between cards
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+
+        article {
+          h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+          }
+
+          .content {
+            .field--name-body {
+              h2 {
+                font-size: 1.2em;
+                color: #00548D;
+              }
+
+              p {
+                font-size: 1em;
+                margin-bottom: 10px;
+              }
+            }
+
+            .field--name-field-tags {
+              margin-top: 15px;
+              font-size: 0.9em;
+
+              // Changes here
+              .field--label {
+                display: none; // Hides the label
+              }
+
+              .field--items {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+
+                .field--item {
+                  display: inline;
+
+                  &:not(:last-child):after {
+                    content: "|";
+                    margin: 0 5px;
+                    color: #333;
+                  }
+
+                  a {
+                    color: #006DB8;
+                    text-decoration: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .links {
+            margin-left: 0;
+            padding-left: 0;
+
+            li {
+              display: inline-block;
+              margin-right: 5px;
+
+              a {
+                background-color: #006DB8;
+                color: white;
+                padding: 6px 12px;
+                border-radius: 4px;
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

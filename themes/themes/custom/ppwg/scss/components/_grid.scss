@@ -1,0 +1,233 @@
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #FCFCFC;
+}
+
+.container.ppwg-grid-one {
+    padding: 60px 14px;
+
+    .ppwg-grid-one-card {
+        padding: 17px;
+        text-align: center;
+        }
+
+    .ppwg-grid-one-title {
+        text-align: center;
+        font-family: Plus Jakarta Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom:12px;
+        text-transform: uppercase;
+
+        a {
+            color: #00548D;
+            &:hover {
+                color: #66B2FF;
+            }
+        }
+    }
+
+    .ppwg-grid-one-title a {
+        text-decoration: none;
+    }
+
+    .ppwg-grid-one-item {
+        text-decoration: none; 
+        color: inherit; 
+        display: block; 
+
+        img {
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 20px;
+        }
+    }
+
+    @media (min-width: 768px) { 
+        .ppwg-grid-one-item img {
+            width: 200px; 
+            height: auto; 
+        }
+    }
+
+
+    @media (min-width: 992px) { /* Large screens */
+        .ppwg-grid-one-item img {
+
+        }
+    }
+
+}
+
+#block-ppwg-ourteam .block-title, #block-ppwg-ourfacility .block-title {
+    text-align: center;
+    color: #00548D;
+    font-size: 2.2em;
+    padding-top: 40px;
+}
+
+.path-frontpage h1.page-header {
+    text-align: center;
+}
+
+
+/* GRID TWO FEATURED TREATMENTS */
+.container.ppwg-grid-two {
+    padding: 40px 0px;
+    background-color: #FCFCFC;
+}
+
+.ppwg-grid-two-card {
+    padding: 25px 35px;
+    text-align: center;
+}
+
+.ppwg-grid-two-title {
+    color: #006DB8;
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px 0;
+}
+
+.ppwg-grid-two-subhead {
+    color: #4D4E4F;
+    font-family: Plus Jakarta Sans;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+}
+
+.ppwg-grid-two-item {
+    color: inherit;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Easing effect for background color change */
+}
+
+.ppwg-grid-two-item:hover .ppwg-grid-two-card {
+    background-color: #e7e7e7; /* Change to desired hover background color */
+}
+
+.ppwg-grid-two-item img {
+    width: 76px; 
+    height: auto; 
+    border-radius: 20px;
+}
+
+/* Title and Subhead link styles */
+.ppwg-grid-two-title a, .ppwg-grid-two-subhead a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+        color: #00548D;
+    }
+}
+
+/* Responsive styles */
+@media (min-width: 768px) { 
+    /* Adjustments for medium screens */
+}
+
+@media (min-width: 992px) { /* Large screens */
+    /* Adjustments for large screens */
+}
+
+.ppwg-grid-two-item-div {
+    display:block;
+}
+.ppwg-grid-two-item-div:hover {
+    background-color: #e7e7e7; /* Gray background on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.ppwg-grid-two-item-div:hover {
+    background-color: #e7e7e7; /* Gray background on hover */
+    cursor: pointer; /* Hand cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+
+
+/* OUR FACILITY */
+
+.ppwg-grid-three-card {
+    padding: 15px;
+}
+
+
+/* TESTIMONIALS */
+
+.ppwg-testimonials {
+    background-color: #006DB8;
+    text-align: center;
+    padding:30px;
+    .ppwg-review {
+        color: #FFF;
+        text-align: center;
+        font-family: Plus Jakarta Sans, sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 157.5%;
+        padding: 40px 50px;
+
+        img {
+            padding:0 20px;
+        }
+    }
+}
+
+@media (min-width: 768px) { 
+    .ppwg-testimonials {
+        padding:90px;
+
+        .ppwg-review {
+            font-size: 30px;
+            line-height: 157.5%;
+            padding: 40px 50px;
+        }
+    }
+}
+
+
+.footer {
+    background-color: #006DB8;
+    text-align: center;
+    padding:30px;
+    font-family: Plus Jakarta Sans, sans-serif;
+
+    .ppwg-footer-address, .ppwg-footer-hours, .ppwg-footer-phone {
+        font-size: 16px;
+        font-weight: 700;
+        padding: 7px;
+        color:#F8F8F8;
+    }
+
+    .ppwg-footer-copyright {
+        font-size: 14px;
+        padding: 20px;
+        color:#F8F8F8;
+        font-weight: normal;
+    }
+
+    .ppwg-footer-copyright p {
+            margin-bottom:0;
+
+    }
+    .ppwg-footer-links {
+        font-size: 14px;
+        a {
+            color:#F8F8F8;
+            font-size: 14px;
+            font-weight: normal;
+
+        }
+
+    }
+}

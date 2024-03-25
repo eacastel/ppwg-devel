@@ -1,0 +1,7 @@
+.env
+.env.dev
+*.sql
+*.tar.gz
+*.tar
+*.gz
+private/

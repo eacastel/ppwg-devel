@@ -1,0 +1,12 @@
+/* Define your SCSS variables here */
+$base-font-size: 62.5%;
+$base-line-height: 1.5;
+$base-font-family: 'Plus Jakarta Sans', sans-serif;
+$base-color: #424242;
+$base-background-color: #F8F8F8;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+// Override Bootstrap's default grid float breakpoint
+//$grid-float-breakpoint: 1200px; 

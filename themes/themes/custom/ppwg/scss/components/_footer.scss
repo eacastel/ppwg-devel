@@ -1,0 +1,66 @@
+.footer .region-footer nav {
+    display: flex;
+    justify-content: center;
+
+    a {
+        font-weight: normal;
+      }
+    
+      .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: transparent;
+    }
+  }
+
+
+  
+  .footer .region-footer ul.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer .region-footer ul.menu li {
+    flex: 0 0 auto;
+  }
+  
+  @media (max-width: 991px) {
+    .footer .region-footer ul.menu {
+      flex: 1 0 100%;
+      max-width: 100%;
+      justify-content: left;
+    }
+  }
+
+  .discord-endossmp-link {
+    position: relative;
+    text-align: left;
+    margin-left:10px;
+  }
+  
+  .discord-endossmp-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+  }
+
+  .discord-endossmp-link img.discord-img {
+    padding:30px;
+    max-width: 180px;
+  }
+  
+  /* Footer Copyright */
+
+  #block-endossmp-theme-footercopyright {
+    .field--name-body {
+    font-size: 80%;
+    text-align: center;
+    }
+  }
+
+  

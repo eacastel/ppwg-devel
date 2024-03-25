@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    image: eacastel/ppwg-drupal-10:staging2
+    ports:
+      - "8080:80"
+    restart: always
+    volumes:
+      - ./composer.json:/opt/drupal/composer.json
+      - ./composer.lock:/opt/drupal/composer.lock
+      - ./modules:/opt/drupal/web/modules
+      - ./profiles:/opt/drupal/web/profiles
+      - ./themes:/opt/drupal/web/themes
+      - ./sites:/opt/drupal/web/sites
+      - ./libraries:/opt/drupal/web/libraries
+      - ./private:/opt/drupal/private
+    environment:
+      DRUPAL_DATABASE: ${DRUPAL_DATABASE}
+      DRUPAL_DB_USER: ${DRUPAL_DB_USER}
+      DRUPAL_DB_PASSWORD: ${DRUPAL_DB_PASSWORD}
+      DB_HOST: ${RDS_HOST}

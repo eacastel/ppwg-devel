@@ -1,0 +1,116 @@
+
+section#block-ppwg-ppwgfeatureservices {
+    position: relative;
+    z-index: 10; // Ensure it's above the previous content
+    margin-top: -40px; // Pull the section upwards
+    background: url('/sites/default/files/blue-wave.png') no-repeat center center; /* Add your background */
+    background-size: cover;
+
+
+
+    p {
+        margin-bottom: 12px;
+    }
+
+    .feature-boxes-wrapper {
+        padding: 40px; /* Space around the boxes */
+    }
+
+    .feature-box {
+        border-radius: 30px;
+        border: 2px solid #e7e7e7;
+        background: #E4F4FF;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 15px 10px 0 10px;;
+        margin-bottom: 20px; /* Vertical spacing between boxes */
+        text-align: center;
+    }
+
+    .feature-title {
+        color: #00548D;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    
+    .feature-text {
+        color: #4D4E4F;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 145.5%;
+    }
+
+    .feature-btn {
+        display: inline-block;
+        color: #FFF;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 100px;
+        border: 2px solid #FFF;
+        background: #00548D;
+        padding: 0px 11px;
+        margin-top: 5px;
+        text-decoration: none;
+    }    
+}
+
+@media (min-width: 768px) {
+    section#block-ppwg-ppwgfeatureservices {
+        margin-top: -140px; 
+
+        .feature-boxes-wrapper {
+            padding: 80px 20px 0;
+        }
+
+        .feature-box {
+            margin-right: 10px; /* Space between boxes */
+            margin-left: 10px; /* Space between boxes */
+            }
+    
+            .feature-boxes-wrapper .row {
+            display: flex;
+            justify-content: space-between;
+            }
+    
+
+        .feature-title {
+            font-size: 20px;
+        }
+        
+        .feature-text {
+            font-size: 15px;
+            line-height: 130%;
+        }
+    }
+}
+
+
+@media (min-width: 992px) {
+    section#block-ppwg-ppwgfeatureservices {
+        margin-top: -170px; 
+        background-size: 1141px 280px;
+
+        .feature-boxes-wrapper {
+            padding: 0px 20px 5px;
+        }
+
+        .feature-box {
+            margin-right: 15px; /* Space between boxes */
+            margin-left: 15px; /* Space between boxes */
+            margin-top: 80px;
+            }
+
+        .feature-title {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        
+        .feature-text {
+            font-size: 15px;
+            line-height: 140%;
+        }
+    }
+}
+

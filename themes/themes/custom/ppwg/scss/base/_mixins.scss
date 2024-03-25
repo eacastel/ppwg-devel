@@ -1,0 +1,11 @@
+/* Define your reusable mixins here */
+@mixin transition($properties) {
+    transition: $properties;
+  }
+  
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+  }
+  
+  /* More mixins as needed... */
+  

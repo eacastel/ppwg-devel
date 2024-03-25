@@ -1,0 +1,187 @@
+/* Base Styles (Mobile First) */
+
+section#block-ppwg-views-block-ppwg-slideshow-block-2 {
+  margin-top: 15px;
+}
+
+
+.view-ppwg-slideshow .slick__slide {
+  position: relative;
+}
+
+/* Positioning the headline and subhead over the image for mobile */
+.view-ppwg-slideshow .blazy__caption {
+  position: absolute;
+  top: 21%; /* Adjust as needed for mobile */
+  left: 36%;
+  transform: translateX(-50%);
+  text-align: left;
+  width: 58%; /* Adjust width as needed */
+  color: white;
+}
+
+/* Styling for the headline - Mobile */
+.view-ppwg-slideshow .slide__title {
+  color: #006DB8;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 28px; /* Smaller font for mobile */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  a {
+    text-decoration: none;
+    color: #006DB8;
+  }
+  display: none;
+}
+
+/* Styling for the subhead - Mobile */
+.view-ppwg-slideshow .slide__description {
+  color: #006DB8;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 18px; /* Smaller font for mobile */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: left; /* Justify subhead to the left */
+  display:none;
+}
+
+.slide__link {
+  display: none;
+}
+
+nav.slick__arrow {
+  display: none;
+}
+
+.media--ratio .media__element, .media--ratio svg, .media--fx .b-blur {
+  height: 350px;
+  object-fit: cover; // This will ensure the image covers the entire container
+  object-position: right;
+}
+
+
+/* Medium Screens (Tablets) */
+@media (min-width: 768px) {
+  .media--ratio .media__element, .media--ratio svg, .media--fx .b-blur {
+    height: 100%;
+    object-fit: cover; // This will ensure the image covers the entire container
+    object-position: center;
+  }
+  .view-ppwg-slideshow .blazy__caption {
+    position: absolute;
+    top: 37%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 59%;
+  }
+
+  .view-ppwg-slideshow .slide__title {
+    display:block;
+    font-size: 38px; /* Adjusted font size for tablets */
+    line-height: 42px;
+    color: #4D4E4F;
+    margin-bottom: 20px;
+    a {
+      text-decoration: none;
+      color: #4D4E4F;
+    }
+  }
+
+  .view-ppwg-slideshow .slide__description {
+    font-size: 20px; /* Adjusted font size for tablets */
+    line-height: 26px;
+    display: block;
+  }
+
+  .slide__link {
+    display: flex; /* Aligns links side by side */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+    margin: 0; /* Resets default margin */
+  }
+  
+  .slide__link a {
+    text-decoration: none; /* Removes underline from links */
+    margin-right: 15px; /* Adds space between the links */
+    position: relative; /* Needed for pseudo-element positioning */
+    padding-left: 20px; /* Adds space for bullet point */
+    margin-top: 25px;
+    width: 150px;
+    color: #006DB8;
+  }
+  
+  .slide__link a::before {
+    content: '•'; /* Creates the bullet point */
+    position: absolute; /* Positions the pseudo-element */
+    left: 0; /* Aligns the bullet point before the text */
+    top: 20%; /* Centers the bullet point vertically */
+    transform: translateY(-50%); /* Fine-tunes vertical centering */
+    color: #006DB8; /* Sets bullet point color */
+    font-size: 20px; /* Adjusts size of the bullet point */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 992px) {
+  .view-ppwg-slideshow .blazy__caption {
+    position: absolute;
+    top: 32%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 54%;
+  }
+
+  .view-ppwg-slideshow .slide__title {
+    font-size: 45px; /* Original font size for large screens */
+    line-height: 49px;
+    margin-bottom:24px;
+  }
+
+  .view-ppwg-slideshow .slide__description {
+    font-size: 26px; /* Original font size for large screens */
+    line-height: 34px;
+  }
+
+  .slide__link {
+    display: flex; /* Aligns links side by side */
+    flex-wrap: wrap; /* Allows links to wrap to next line on smaller screens */
+    list-style-type: none; /* Removes default list styling */
+    padding: 0; /* Resets default padding */
+    margin: 0; /* Resets default margin */
+  }
+  
+  .slide__link a {
+    text-decoration: none; /* Removes underline from links */
+    margin-right: 15px; /* Adds space between the links */
+    position: relative; /* Needed for pseudo-element positioning */
+    padding-left: 20px; /* Adds space for bullet point */
+    margin-top: 25px;
+    width: 150px;
+    color: #006DB8;
+  }
+  
+  .slide__link a::before {
+    content: '•'; /* Creates the bullet point */
+    position: absolute; /* Positions the pseudo-element */
+    left: 0; /* Aligns the bullet point before the text */
+    transform: translateY(-50%); /* Fine-tunes vertical centering */
+    color: #006DB8; /* Sets bullet point color */
+    font-size: 20px; /* Adjusts size of the bullet point */
+  }
+}
+
+
+// SCSS for slider image adjustments
+
+// Default styles for larger screens (keeping the original aspect ratio)
+.slick__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center; // Keeps the center of the image visible
+}
+
