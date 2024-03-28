@@ -1,0 +1,8 @@
+name: 'PPWG Stripe Payment with Preapproval Webform Gateway'
+type: module
+description: 'Extends Stripe Webform to save payment methods for future use.'
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:webform
+  - drupal:stripe_webform

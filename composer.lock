@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5fa1077ced3e94abaf6e732ad3147362",
+    "content-hash": "a75bbced652a5323dd64e54c9591c8fd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6064,6 +6064,149 @@
             }
         },
         {
+            "name": "drupal/stripe",
+            "version": "2.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stripe.git",
+                "reference": "2.0.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stripe-2.0.0-beta4.zip",
+                "reference": "2.0.0-beta4",
+                "shasum": "fda2de1e566690b86044832af3b105a783c13369"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "stripe/stripe-php": "^7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta4",
+                    "datestamp": "1678224485",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "hamrant",
+                    "homepage": "https://www.drupal.org/user/3204205"
+                },
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                },
+                {
+                    "name": "lliss",
+                    "homepage": "https://www.drupal.org/user/724750"
+                },
+                {
+                    "name": "mmilano",
+                    "homepage": "https://www.drupal.org/user/184408"
+                },
+                {
+                    "name": "q0rban",
+                    "homepage": "https://www.drupal.org/user/31022"
+                },
+                {
+                    "name": "scotthooker",
+                    "homepage": "https://www.drupal.org/user/1347442"
+                },
+                {
+                    "name": "Sebastien M.",
+                    "homepage": "https://www.drupal.org/user/380104"
+                },
+                {
+                    "name": "sirkitree",
+                    "homepage": "https://www.drupal.org/user/59025"
+                },
+                {
+                    "name": "torgosPizza",
+                    "homepage": "https://www.drupal.org/user/151333"
+                },
+                {
+                    "name": "vasike",
+                    "homepage": "https://www.drupal.org/user/156237"
+                },
+                {
+                    "name": "vordude",
+                    "homepage": "https://www.drupal.org/user/150473"
+                }
+            ],
+            "description": "Stripe",
+            "homepage": "https://www.drupal.org/project/stripe",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/stripe",
+                "issues": "https://www.drupal.org/project/issues/stripe"
+            }
+        },
+        {
+            "name": "drupal/stripe_webform",
+            "version": "2.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/stripe_webform.git",
+                "reference": "2.0.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/stripe_webform-2.0.0-beta4.zip",
+                "reference": "2.0.0-beta4",
+                "shasum": "050d409e1d3747eb1671e4a5f211bb7975fae2cb"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "drupal/stripe": "^2.0.0",
+                "drupal/webform": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-beta4",
+                    "datestamp": "1677789872",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hanoii",
+                    "homepage": "https://www.drupal.org/user/23157"
+                },
+                {
+                    "name": "heddn",
+                    "homepage": "https://www.drupal.org/user/1463982"
+                }
+            ],
+            "description": "Provides a stripe webform element and default handlers",
+            "homepage": "https://www.drupal.org/project/stripe_webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/stripe_webform"
+            }
+        },
+        {
             "name": "drupal/tfa",
             "version": "2.0.0-alpha2",
             "source": {
@@ -6443,6 +6586,79 @@
                 "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
                 "docs": "https://www.drupal.org/docs/8/modules/webform",
                 "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            }
+        },
+        {
+            "name": "drupal/webform_encrypt",
+            "version": "2.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform_encrypt.git",
+                "reference": "2.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform_encrypt-2.0.0-alpha1.zip",
+                "reference": "2.0.0-alpha1",
+                "shasum": "d33028a4b6cc6395ba6850144dc1cc941d390610"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10",
+                "drupal/encrypt": "3.*",
+                "drupal/webform": "^6.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0-alpha1",
+                    "datestamp": "1684791212",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Tushar Thatikonda (th_tushar)",
+                    "homepage": "https://www.drupal.org/u/th_tushar",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Manuel Garcia (Manuel Garcia)",
+                    "homepage": "https://www.drupal.org/u/manuel-garcia",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Vijaya Chandran Mani (vijaycs85)",
+                    "homepage": "https://www.drupal.org/u/vijaycs85",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Saul Willers (fenstrat)",
+                    "homepage": "https://www.drupal.org/u/fenstrat",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Rob Holmes (Rob Holmes)",
+                    "homepage": "https://www.drupal.org/u/rob-holmes",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Jean Ribeiro (jribeiro)",
+                    "homepage": "https://www.drupal.org/u/jribeiro",
+                    "role": "Co-maintainer"
+                }
+            ],
+            "description": "Provides encryption for webform components.",
+            "homepage": "https://drupal.org/project/webform_encrypt",
+            "support": {
+                "source": "http://cgit.drupalcode.org/webform_encrypt",
+                "issues": "https://drupal.org/project/issues/webform_encrypt"
             }
         },
         {
@@ -9047,6 +9263,66 @@
                 }
             ],
             "time": "2024-03-02T06:30:58+00:00"
+        },
+        {
+            "name": "stripe/stripe-php",
+            "version": "v7.128.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/stripe/stripe-php.git",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c704949c49b72985c76cc61063aa26fefbd2724e",
+                "reference": "c704949c49b72985c76cc61063aa26fefbd2724e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "3.5.0",
+                "phpstan/phpstan": "^1.2",
+                "phpunit/phpunit": "^5.7 || ^9.0",
+                "squizlabs/php_codesniffer": "^3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stripe\\": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stripe and contributors",
+                    "homepage": "https://github.com/stripe/stripe-php/contributors"
+                }
+            ],
+            "description": "Stripe PHP Library",
+            "homepage": "https://stripe.com/",
+            "keywords": [
+                "api",
+                "payment processing",
+                "stripe"
+            ],
+            "support": {
+                "issues": "https://github.com/stripe/stripe-php/issues",
+                "source": "https://github.com/stripe/stripe-php/tree/v7.128.0"
+            },
+            "time": "2022-05-05T17:18:02+00:00"
         },
         {
             "name": "symfony/console",
@@ -12084,9 +12360,12 @@
         "drupal/filefield_paths": 10,
         "drupal/inline_entity_form": 5,
         "drupal/slick_extras": 5,
+        "drupal/stripe": 10,
+        "drupal/stripe_webform": 10,
         "drupal/tfa": 15,
         "drupal/typed_data": 10,
-        "drupal/webform": 10
+        "drupal/webform": 10,
+        "drupal/webform_encrypt": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
